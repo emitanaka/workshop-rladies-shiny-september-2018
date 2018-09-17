@@ -5,3 +5,56 @@ Initialized empty Git repository in /Users/emi/Dropbox (Personal)/Workshops/2018
 ]0;~/Dropbox (Personal)/Workshops/20180919_RLadies
 [38;5;135memi [0mat [38;5;166mp8274 [0min [38;5;118m~/Dropbox (Personal)/Workshops/20180919_RLadies
 [0m$ git add . 
+]0;~/Dropbox (Personal)/Workshops/20180919_RLadies
+[38;5;135memi [0mat [38;5;166mp8274 [0min [38;5;118m~/Dropbox (Personal)/Workshops/20180919_RLadies
+[0m$ c[Kgit commit -m "first commit"
+[master (root-commit) b134228] first commit
+ 26 files changed, 2423 insertions(+)
+ create mode 100644 .Rproj.user/CCB5469B/console06/80140A1C
+ create mode 100644 .Rproj.user/CCB5469B/console06/INDEX001
+ create mode 100644 .Rproj.user/CCB5469B/sources/s-FA190AA8/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 20180919_RLadies.Rproj
+ create mode 100644 slides.Rmd
+ create mode 100644 task1_soap_rmarkdown.Rmd
+ create mode 100644 task2_presentation.Rmd
+ create mode 100644 task3_soap_flexdashboard.Rmd
+ create mode 100644 task4-6_plot-ggplot.Rmd
+ create mode 100644 task7-8_helloshiny/.Rhistory
+ create mode 100644 task7-8_helloshiny/.Rproj.user/CCB5469B/console06/INDEX001
+ create mode 100644 task7-8_helloshiny/.Rproj.user/CCB5469B/pcs/files-pane.pper
+ create mode 100644 task7-8_helloshiny/.Rproj.user/CCB5469B/pcs/source-pane.pper
+ create mode 100644 task7-8_helloshiny/.Rproj.user/CCB5469B/pcs/windowlayoutstate.pper
+ create mode 100644 task7-8_helloshiny/.Rproj.user/CCB5469B/pcs/workbench-pane.pper
+ create mode 100644 task7-8_helloshiny/.Rproj.user/CCB5469B/rmd-outputs
+ create mode 100644 task7-8_helloshiny/.Rproj.user/CCB5469B/saved_source_markers
+ create mode 100644 task7-8_helloshiny/.Rproj.user/CCB5469B/sources/per/t/E01D9662
+ create mode 100644 task7-8_helloshiny/.Rproj.user/CCB5469B/sources/per/t/E01D9662-contents
+ create mode 100644 task7-8_helloshiny/.Rproj.user/CCB5469B/sources/prop/14662F8C
+ create mode 100644 task7-8_helloshiny/.Rproj.user/CCB5469B/sources/prop/INDEX
+ create mode 100644 task7-8_helloshiny/.Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 task7-8_helloshiny/server.R
+ create mode 100644 task7-8_helloshiny/ui.R
+ create mode 100644 task9_shinyflexdashboard.Rmd
+]0;~/Dropbox (Personal)/Workshops/20180919_RLadies
+[38;5;135memi [0mat [38;5;166mp8274 [0min [38;5;118m~/Dropbox (Personal)/Workshops/20180919_RLadies
+[0m$ git remote add origin https://github.com/emitanaka/workshop-rladies-shiny-september-2018.git
+]0;~/Dropbox (Personal)/Workshops/20180919_RLadies
+[38;5;135memi [0mat [38;5;166mp8274 [0min [38;5;118m~/Dropbox (Personal)/Workshops/20180919_RLadies
+[0m$ git push -u origin master
+Counting objects: 41, done.
+Delta compression using up to 4 threads.
+Compressing objects:   3% (1/29)   Compressing objects:   6% (2/29)   Compressing objects:  10% (3/29)   Compressing objects:  13% (4/29)   Compressing objects:  17% (5/29)   Compressing objects:  20% (6/29)   Compressing objects:  24% (7/29)   Compressing objects:  27% (8/29)   Compressing objects:  31% (9/29)   Compressing objects:  34% (10/29)   Compressing objects:  37% (11/29)   Compressing objects:  41% (12/29)   Compressing objects:  44% (13/29)   Compressing objects:  48% (14/29)   Compressing objects:  51% (15/29)   Compressing objects:  55% (16/29)   Compressing objects:  58% (17/29)   Compressing objects:  62% (18/29)   Compressing objects:  65% (19/29)   Compressing objects:  68% (20/29)   Compressing objects:  72% (21/29)   Compressing objects:  75% (22/29)   Compressing objects:  79% (23/29)   Compressing objects:  82% (24/29)   Compressing objects:  86% (25/29)   Compressing objects:  89% (26/29)   Compressing objects:  93% (27/29)   Compressing objects:  96% (28/29)   Compressing objects: 100% (29/29)   Compressing objects: 100% (29/29), done.
+Writing objects:   2% (1/41)   Writing objects:   4% (2/41)   Writing objects:   7% (3/41)   Writing objects:   9% (4/41)   Writing objects:  12% (5/41)   Writing objects:  14% (6/41)   Writing objects:  17% (7/41)   Writing objects:  19% (8/41)   Writing objects:  21% (9/41)   Writing objects:  24% (10/41)   Writing objects:  26% (11/41)   Writing objects:  29% (12/41)   Writing objects:  31% (13/41)   Writing objects:  34% (14/41)   Writing objects:  36% (15/41)   Writing objects:  39% (16/41)   Writing objects:  41% (17/41)   Writing objects:  43% (18/41)   Writing objects:  46% (19/41)   Writing objects:  48% (20/41)   Writing objects:  51% (21/41)   Writing objects:  53% (22/41)   Writing objects:  56% (23/41)   Writing objects:  58% (24/41)   Writing objects:  60% (25/41)   Writing objects:  63% (26/41)   Writing objects:  65% (27/41)   Writing objects:  68% (28/41)   Writing objects:  70% (29/41)   Writing objects:  73% (30/41)   Writing objects:  75% (31/41)   Writing objects:  78% (32/41)   Writing objects:  80% (33/41)   Writing objects:  82% (34/41)   Writing objects:  85% (35/41)   Writing objects:  87% (36/41)   Writing objects:  90% (37/41)   Writing objects:  92% (38/41)   Writing objects:  95% (39/41)   Writing objects:  97% (40/41)   Writing objects: 100% (41/41)   Writing objects: 100% (41/41), 21.70 KiB | 383.00 KiB/s, done.
+Total 41 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), done.[K
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:[K
+remote:      https://github.com/emitanaka/workshop-rladies-shiny-september-2018/pull/new/master[K
+remote: 
+To https://github.com/emitanaka/workshop-rladies-shiny-september-2018.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]0;~/Dropbox (Personal)/Workshops/20180919_RLadies
+[38;5;135memi [0mat [38;5;166mp8274 [0min [38;5;118m~/Dropbox (Personal)/Workshops/20180919_RLadies
+[0m$ [K[0m$ git add .

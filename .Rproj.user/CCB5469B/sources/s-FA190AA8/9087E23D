@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1537165353876.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "9087E23D",
+    "lastKnownWriteTime" : 1537164940,
+    "last_content_update" : 1537165482360,
+    "path" : "~/Dropbox (Personal)/Workshops/20180919_RLadies/slides.Rmd",
+    "project_path" : "slides.Rmd",
+    "properties" : {
+        "cursorPosition" : "1,10",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
