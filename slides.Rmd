@@ -1,8 +1,8 @@
 ---
 title: "Shiny September: Making an interactive web app with R"
 subtitle: ""
-author: "Emi Tanaka"
-date: "<br>2018/09/19<br><br>"
+author: "Emi Tanaka&nbsp;&nbsp;&nbsp;`r anicon::faa('twitter', animate='float', rtext='&nbsp;@statsgen')`"
+date: "<br>2018/09/19<br>`r anicon::faa('link', animate='vertical', rtext='&nbsp;bit.ly/rladies-sydney-shiny', color='yellow')`"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -27,7 +27,7 @@ livedemosign <- function(top, left, deg) {
                  style=glue::glue("border:solid; border-color:black; position:absolute; top:{top}%; left:{left}%; font-size:36px; padding:4px; background-color:white; color:black;transform:rotate({deg}deg);")
                  )
 }
-anicon::faa('link', animate='vertical', rtext='&nbsp;bit.ly/rladies-sydney-shiny', color='yellow')
+
 ```
 
 
@@ -614,7 +614,7 @@ count: false
 
 <center>
 <span style="font-size: 2em">If you feel lost, have a look<br/>
-at the .Rmd files <a href="https://github.com/emitanaka">here</a>.</span><br><br>
+at the .Rmd files <a href="https://github.com/emitanaka/workshop-rladies-shiny-september-2018">here</a>.</span><br><br>
 `r anicon::cia("images/up-arrow.svg", animate="vertical", rtext="&nbsp;Solution here!", size=2)`
 </center>
 
@@ -1399,7 +1399,7 @@ class: split-three bg-main1 with-border
 * To deploy the app, you will need an account at `shinyapps.io`
 * The specifics of how to deploy is written in detail [here](http://docs.rstudio.com/shinyapps.io/getting-started.html#deploying-applications). 
 * We will have some live demo if we can get here!
-
+* Once done, do add your RPub link to your shiny app [here](https://docs.google.com/spreadsheets/d/1UJ0zKIEkEzBI2MoM03bUxP5KxEA1Srff1jHsK2GarpI/edit?usp=sharing). 
 ]]
 .column[.content[
 # .center[Task 9: <br>Shiny Flexdashboard]
@@ -1411,6 +1411,14 @@ class: split-three bg-main1 with-border
 
 ---
 
+class: bg-main1 middle center white
+
+# Pop Quiz! 
+
+## What's the difference between getting the interactive plot in `plotly` and `shiny`?
+
+
+---
 
 class: split-three bg-main1 with-border
 
@@ -1419,7 +1427,7 @@ class: split-three bg-main1 with-border
 * Install the `shinydashboard` package and its dependencies.
 * `shinydashboard` allows for a more complex dashboard structure than that of `flexdashboard`.
 * It is more complex hence the coding may not be as straight forward. 
-* To learn more about it, see the documentation [here]().
+* To learn more about it, see the documentation [here](https://rstudio.github.io/shinydashboard/get_started.html).
 * To see an example of an instance running `shinydashboard`, see [here](http://shiny.maths.usyd.edu.au/caige_explorer_2011_2017/). 
 ]]
 .column[.content.nopadding[
