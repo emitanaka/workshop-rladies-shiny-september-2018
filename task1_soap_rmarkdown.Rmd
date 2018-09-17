@@ -1,0 +1,53 @@
+---
+title: "Simple Soap Report"
+author: "Emi Tanaka"
+date: "19/09/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Before starting the report, share a little bit about yourself and what interested you about coming to the R-Ladies event by replacing the paragraph in [About Me](#About Me) to about you. You only need to share as much as you feel comfortable to. Knowing about you and your feedback is helpful in shaping future events such as this!
+
+*Hint: Remember that you can always go to RStudio > Help > Cheatsheets > R Markdown Reference Guide if you forget how to format your .Rmd files!*
+
+
+# About Me
+
+I'm Emi and I am a lecturer in statistics at the School of Mathematics and Statistics, the University of Sydney. I have been using R for over 10 years now, having learned it in my undergraduate. Even with my extended experience, there are so many new contributions that I am learning just as you are. 
+
+# Introduction 
+
+This data set was obtained from [OzDASL](http://www.statsci.org/data/oz/soap.html).
+
+According to Rex Boggs:
+
+
+> I had a hypothesis that the daily weight of my bar of soap [in grams] in my shower wasn't a linear function, the reason being that the tiny little bar of soap at the end of its life seemed to hang around for just about ever. I wanted to throw it out, but I felt I shouldn't do so until it became unusable. And that seemed to take weeks. Also I had recently bought some digital kitchen scales and felt I needed to use them to justify the cost. I hypothesized that the daily weight of a bar of soap might be dependent upon surface area, and hence would be a quadratic function ... .
+
+The data ends at day 22. On day 23 the soap broke into two pieces and one piece went down the plughole.
+
+## Scatter plot and regression
+
+```{r}
+dat <- read.table("data/soap.txt", header=T)
+plot(dat$Day, dat$Weight, xlab="Day", ylab="Weight (in g)", main="Soap Usage")
+fit <- lm(Weight ~ Day, data=dat) # fit a simple linear regression
+abline(coef(fit)) # draw the fitted line
+plot(dat$Day, resid(fit), xlab="Day", ylab="Residual", main="Residual Plot") 
+abline(h=0)
+```
+
+The fitted line is given as Weight = `r round(coef(fit)[2],1)` $\times$ Day + `r round(coef(fit)[1], 1)`. The fitted line appear to be good. Residual plot reveals that there appears to be an underestimate of the soap weight at the start and end of the recorded days. This suggests that perhaps a simple linear regression model may not be enough as hypothesised by Rex. 
+
+```{r, echo=F}
+dat2 <- dat
+dat2[nrow(dat2), "Weight"] <- 4
+fit2 <- lm(Weight ~ Day, data=dat2) # fit a simple linear regression
+```
+
+## Correction
+
+If you correctly fix the mistake then the the fitted line you should get is Weight = `r round(coef(fit2)[2],1)` $\times$ Day + `r round(coef(fit2)[1], 1)`. Note that an inline R command is used for the fitted line so effectively I only would have needed to add one line of R code to and knit to get the corrected report. Bottomline is that you save time if you need to redo the report for whatever reason!

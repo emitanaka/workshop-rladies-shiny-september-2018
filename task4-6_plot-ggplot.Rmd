@@ -1,0 +1,51 @@
+---
+title: "ggplot + plotly"
+author: "Emi Tanaka"
+date: "19/09/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r packages, message=F, warning=F}
+library(ggplot2)
+library(plotly)
+```
+
+## First ggplot 
+
+Here is my first `ggplot`!
+
+```{r}
+g <- ggplot(iris) +
+  aes(Sepal.Length, Sepal.Width) +
+  geom_point() +
+  labs(x = "Sepal Length") +
+  labs(y = "Sepal Width") +
+  labs(title="The famous iris data") + 
+  labs(subtitle="Data collected by Anderson, Edgar (1935)") +
+  aes(color= Species) +
+  theme_bw(base_size=16)
+g
+```
+
+## First plotly 
+
+Here is my first `plotly`! This is an interactive plot so try hovering it over and clicking. You may want to write `message=F, warning=F` as your R chunk option here to avoid some unwanted outputs. 
+
+```{r, message=F, warning=F}
+plot_ly(iris, 
+        x=~Sepal.Length, 
+        y=~Sepal.Width, 
+        color=~Species)
+```
+
+## First ggplotly
+
+Here is my first `ggplotly`! This is also an interactive plot. Remember that you cannot achieve this interactivity for pdf and doc. This is only designed for html output.
+
+```{r}
+ggplotly(g)
+```

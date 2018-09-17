@@ -1,0 +1,56 @@
+---
+title: "Simple Soap Report"
+author: "Emi Tanaka"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+dat <- read.table("data/soap.txt", header=T)
+```
+
+Row {.tabset .tabset-fade}
+-----------------------------------------------------------------------
+
+
+### Why R-Ladies
+
+<h1>Why R-Ladies</h1>
+
+* R-Ladies promotes gender diversity within the R community. 
+* R package contribution is predominately by (cis)-male. 
+* Diversity is a great step forward for science and the community in general. This is also true for the agricultural area where maintaining genetic diversity for food security is *vital*.
+* **What would you hope to learn from coming to R-Ladies?**
+
+### Introduction
+
+This data set was obtained from [OzDASL](http://www.statsci.org/data/oz/soap.html).
+
+According to Rex Boggs:
+
+
+> I had a hypothesis that the daily weight of my bar of soap [in grams] in my shower wasn't a linear function, the reason being that the tiny little bar of soap at the end of its life seemed to hang around for just about ever. I wanted to throw it out, but I felt I shouldn't do so until it became unusable. And that seemed to take weeks. Also I had recently bought some digital kitchen scales and felt I needed to use them to justify the cost. I hypothesized that the daily weight of a bar of soap might be dependent upon surface area, and hence would be a quadratic function ... .
+
+The data ends at day 22. On day 23 the soap broke into two pieces and one piece went down the plughole.
+
+Row {data-height=500}
+-----------------------------------------------------------------------
+
+### Scatter Plot
+
+```{r}
+plot(dat$Day, dat$Weight, xlab="Day", ylab="Weight (in g)", main="Soap Usage")
+fit <- lm(Weight ~ Day, data=dat) # fit a simple linear regression
+abline(coef(fit)) # draw the fitted line
+```
+
+### Residual Plot
+
+```{r}
+plot(dat$Day, resid(fit), xlab="Day", ylab="Residual", main="Residual Plot") 
+abline(h=0)
+```
+
