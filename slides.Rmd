@@ -1,8 +1,8 @@
 ---
-title: "Shiny September: Making an interactive web app with R"
-subtitle: ""
-author: "Emi Tanaka&nbsp;&nbsp;&nbsp;`r anicon::faa('twitter', animate='float', rtext='&nbsp;@statsgen')`"
-date: "<br>2018/09/19<br>`r anicon::faa('link', animate='vertical', rtext='&nbsp;bit.ly/rladies-sydney-shiny', color='yellow')`"
+title: "Shiny September"
+subtitle: "Making an interactive web app with R"
+author: "<br><br>Emi Tanaka&nbsp;&nbsp;&nbsp;`r anicon::faa('twitter', animate='float', rtext='&nbsp;@statsgen')`"
+date: "<br>2018/09/19<br><br>`r anicon::faa('link', animate='vertical', rtext='&nbsp;bit.ly/rladies-sydney-shiny', color='yellow')`"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -923,7 +923,7 @@ to make interactive plots.]
 ]
 ]]
 .column[.content.center[
-```{r, include=F, cache=T}
+```{r, include=F}
 pg <- plot_ly(iris, 
         x=~Sepal.Length, 
         y=~Sepal.Width, 
@@ -966,7 +966,7 @@ object to a .font-mono[plotly] object.]
 ]
 ]]
 .column[.content.center[
-```{r, include=F, cache=T}
+```{r, include=F}
 gg <- ggplot(iris) +
   aes(Sepal.Length, Sepal.Width) +
   geom_point() +
@@ -1434,8 +1434,10 @@ class: split-three bg-main1 with-border
 # .center[Task 11: .font-mono.font_small[shinycustomloader]]
 * Install the `shinycustomloader` package and its dependencies.
 * .font-mono[shinycustomloader] is a simple package that allows for custom image/gif loader (or you can use built-in ones) as a waiting screen while a computationally heavy work needs to load. 
-* To see you waiting screen, you can use `Sys.sleep(10)` to pause the computation for 10 seconds (don't do it in practice of course)!
+* To see your waiting screen, you can use `Sys.sleep(10)` to pause the computation for 10 seconds (don't do it in practice of course)!
 .fig90[![](images/progressbar.png)]
+* As Charles, the residential Melbourne R-(Cat)-Lady, says it's just more friendly if you have a company while waiting!
+* If you want a hex sticker for `shinycustomloader`, approach Emi. 
 * For instructions and examples, see [here](https://github.com/emitanaka/shinycustomloader).
 
 ]]
