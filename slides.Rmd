@@ -137,7 +137,7 @@ plot_ly(cars,
         y = ~speed)
 ```
 .center[
-### `plotly`
+### `plotly` (+ `ggplot2`)
 ]
 ```{r, include=F}
 pg <- plot_ly(cars, x = ~dist, y = ~speed, width=400, height=300)
@@ -218,11 +218,10 @@ install.packages("pkg-name")
 * .font-mono[rmarkdown]
 * .font-mono[shiny]
 * .font-mono[shinydashboard]
+* .font-mono[shinycustomloader]
 * .font-mono[plotly]
 * .font-mono[ggplot2] or .font-mono[tidyverse]
 * .font-mono[flexdashboard]
-* .font-mono[xaringan]
-* .font-mono[xaringanthemer]
 * and their dependencies.
 
 ---
@@ -1390,7 +1389,7 @@ class: split-three bg-main1 with-border
 # .center[Task 7: <br>Hello Shiny]
 * Install the `shiny` package and its dependencies.
 * Get started with RStudio > Shiny Web App ... > and fill details in as necessary. Note: my preference is the Multiple File (ui.R/server.R) which separates the user interface and server to two files but you can have both in one file (app.R). 
-* You will get a template with the geyser histogram example. Go to either ui.R, server.R or app.R. There should be `Run App` appear in the upper right corner of the editor window in RStudio.
+* You will get a template with the eruption time histogram example. Go to either ui.R, server.R or app.R. There should be `Run App` appear in the upper right corner of the editor window in RStudio.
 * Push the `Run App` and you will see a .font-mono[shiny] app in action!
 * Now try replacing the base plot with a ggplot histogram.
 ]]
